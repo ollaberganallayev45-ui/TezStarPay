@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TezStarPay</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 26px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 16px;
+      padding: 15px;
+      margin: 10px 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .price {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    button {
+      background: #22c55e;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #16a34a;
+    }
+
+    .footer {
+      margin-top: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>⭐ TezStarPay</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>100 Stars</h2>
+      <div class="price">15 000 so'm</div>
+      <button onclick="buy('100')">Sotib olish</button>
+    </div>
+
+    <div class="card">
+      <h2>500 Stars</h2>
+      <div class="price">70 000 so'm</div>
+      <button onclick="buy('500')">Sotib olish</button>
+    </div>
+
+    <div class="card">
+      <h2>1000 Stars</h2>
+      <div class="price">130 000 so'm</div>
+      <button onclick="buy('1000')">Sotib olish</button>
+    </div>
+
+    <div class="footer">
+      💸 Tez va ishonchli xizmat  
+    </div>
+
+  </div>
+
+  <script>
+    function buy(amount) {
+      alert(amount + " Stars buyurtma berildi!\nAdmin bilan bog‘laning.");
+    }
+  </script>
+
+</body>
+</html>
